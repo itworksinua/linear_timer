@@ -221,7 +221,7 @@ class _LinearTimerState extends State<LinearTimer>
   void onUpdate() {
     setState(() {});
     if (widget.onUpdate != null) {
-      widget.onUpdate!.call();
+      widget.onUpdate!(_timerController);
     }
   }
 }

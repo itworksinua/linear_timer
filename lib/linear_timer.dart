@@ -118,7 +118,7 @@ class LinearTimer extends StatefulWidget {
   final VoidCallback? onTimerStart;
 
   // The callback to call whenever the timer is updated
-  final VoidCallback? onUpdate;
+  final Function(LinearTimerController)? onUpdate;
 
   // The duration for the timer
   final Duration duration;
